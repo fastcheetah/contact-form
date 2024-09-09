@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <section>
+        <form action="" id="form">
+          <h1>Contact Us</h1> 
+          <div class="names">             
+            <div>
+              <label for="fname" id="firstname">First Name *</label> <br>
+              <input type="text" name="First Name" id="fname">
+              <p class="err">This field is required</p>
+            </div>
+            <div>
+              <label for="lname" id="lastname">Last Name *</label> <br>
+              <input type="text" name="Last Name" id="lname">
+              <p class="err">This field is required</p>
+            </div>
+          </div>
+          <div class="mail">
+            <label for="email">Email Address *</label><br>
+            <input type="email" placeholder="email@example.com" id="email">
+            <p class="err">This field is required</p>
+          </div>
+          <div class="qtype">
+            <p>Query Type *</p>
+            <div class="enquiry">
+              <input type="radio" name="qtype" id="enquiry" value="enquiry">
+              <label for="enquiry">General Enquiry</label>
+            </div>
+            <div class="request">
+              <input type="radio" name="qtype" id="request" value="request" >
+              <label for="request">Support Request</label><br>
+            </div>
+            <p class="err">Please select a querytype</p>
+          </div> <br>
+          <div class="msgbox">
+            <label for="message">Message *</label><br>
+            <textarea name="" id="message"></textarea><br>
+            <p class="err">This field is required</p>
+          </div>
+          <div class="consent">
+            <input type="checkbox" name="" id="checkbox">
+            <label for="checkbox">I consent to being contacted by the team *</label><br>
+            <p class="err">To submit this form, please consent to being contacted</p>
+          </div>
+          
+          <input type="submit" value="submit" class="submit"/>
+          <!-- <button class="button">Submit</button> -->
+
+
+        </form>
+      </section>
+  
+<!-- 
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Icekingroyale" target="_blank">icekingroyale</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

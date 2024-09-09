@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+/* primary colors */
+--GreenL: hsl(148, 38%, 91%);
+--GreenM: hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 54%);
+
+/* neutral colors */
+--White: hsl(0, 0%, 100%);
+--GreyD: hsl(186, 15%, 59%);
+--GreyM: hsl(187, 24%, 22%);
+}
+
+
+
+body{
+    background-color: var(--GreenL);
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: x-small;
+}
+
+section{
+    /* border: 2px solid blue; */
+    /* height: 470px; */
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--White);
+    border-radius: 15px;
+    margin: 100px auto 50px auto;
+    padding-bottom: 30px;      
+      
+}
+
+
+form{
+    /* height: 400px; */
+    margin-top: 20px;
+    /* border: 2px solid yellow; */
+}
+
+
+    /* trying to space the fname & lname text boxes
+     space out horizontally the contents of the form
+     the email box and message box should fit the rest */
+
+
+
+
+.names{
+    display: flex;   
+    margin: 10px auto; 
+    gap: 8px;
+    
+    
+    #lname, #fname{
+        border-width: 1px;
+        border-radius: 5px;
+        height: 30px;
+        width: 171px;
+        
+    }
+}
+
+
+.mail{
+    margin: 20px auto;    
+
+    input{
+        /* border: 2px solid red; */
+        border-width: 1px;
+        border-radius: 5px;
+        width: 350px;
+        height: 30px;
+    }
+}
+
+
+
+
+#email{
+    padding-left: 4px;
+}
+
+
+#enquiry, #request, label, #checkbox{
+    accent-color: var(--GreenM);
+    cursor: pointer;
+}
+
+.enquiry, .request{
+    display: inline-block;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+    gap: 10px;
+    margin: auto 3px;
+    padding: auto 50px;
+    font-size: 11px;
+    width: 170px;
+
+    input{
+        /* border: 2px solid red; */
+        /* margin: 6px 5px; */
+        margin: 10px;
+        margin-top: 5px;
+        padding-right: 10px;
+   }
+}
+
+.msgbox{
+    margin-top: 20px;    
+}
+
+.consent{
+    margin: 15px auto;
+    
+    label{
+        /* border: 2px solid green; */
+        margin-left: 10px;
+   }
+}
+
+textarea{
+    width: 350px;
+    height: 80px;
+    border-radius: 6px;
+
+}
+
+
+
+
+.submit{
+    background-color: var(--GreenM);
+    color: var(--White);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:checked > .enquiry,
+input:checked > .request{
+    background-color: var(--GreenM);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.err{
+    color: red;
+    display: none;
+}
